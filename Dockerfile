@@ -1,4 +1,4 @@
-FROM n8nio/n8n:0.191.1-debian
+FROM n8nio/n8n:0.193.5-debian
 
 USER root
 
@@ -9,7 +9,8 @@ RUN \
 
 
 RUN npm_config_user=root npm install -g async cheerio passport nodemailer \
-	gm luxon lodash joi jsdom axios got xml2js soap csv-parse js-yaml \
+	gm request luxon lodash joi jsdom axios got@11.8.3 xml2js soap csv js-yaml \
 	uuid crypto-js url jspdf pdfkit pdfjs xlsx excel4node exceljs \
 	pdf2json pdfreader pdf-parse puppeteer puppeteer-extra \
-	puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker docx
+	puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker docx \
+	airtable superagent deepmerge ssh2
