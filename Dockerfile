@@ -1,4 +1,4 @@
-FROM n8nio/n8n:0.193.5-debian
+FROM n8nio/n8n:0.195.5-debian
 
 USER root
 
